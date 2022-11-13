@@ -1,0 +1,57 @@
+.state-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f0f0;
+  grid-column: span 3;
+}
+
+.state-box.dark {
+  background-color: #1f2a40;
+}
+.state-box > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.9rem;
+  width: 100%;
+}
+
+.state-box > div > :first-child,
+.state-box > div > :last-child {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 0.2rem;
+}
+
+.state-box > div > :first-child svg {
+  color: #70d8bd !important;
+  font-size: 1.6rem !important;
+}
+.state-box.dark > div > :first-child svg {
+  color: #3da58a !important;
+}
+.state-box > div > :first-child p:nth-child(2) {
+  color: #141414;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.state-box.dark > div > :first-child p:nth-child(2) {
+  color: #e0e0e0 !important;
+}
+
+.state-box > div > :first-child p:last-child {
+  color: #4cceac !important;
+}
+.state-box > div > :last-child {
+  row-gap: 1rem;
+}
+
+.state-box > div > :last-child > p {
+  color: #70d8bd !important;
+}
+.state-box.dark > div > :last-child > p {
+  color: #3da58a !important;
+}

@@ -1,0 +1,16 @@
+.header h1 {
+  color: #141414;
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+.header.dark h1 {
+  color: #e0e0e0;
+}
+.header h4 {
+  color: #3da58a;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+.header.dark h4 {
+  color: #70d8bd;
+}

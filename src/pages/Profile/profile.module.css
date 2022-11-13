@@ -1,0 +1,145 @@
+.profile {
+  padding: 1.1rem;
+}
+
+.profile form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+  margin-top: -1rem;
+}
+.profile form fieldset {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-basis: 100%;
+  padding: 1rem 1rem 0.4rem;
+  background-color: #0000000f;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: text;
+  border-bottom: 1px solid #0000006b;
+  position: relative;
+}
+.profile.dark form fieldset {
+  background-color: #ffffff17;
+  border-bottom-color: #ffffffb3;
+}
+.profile form fieldset.isError {
+  border-bottom-color: #d32f2f;
+}
+.profile.dark form fieldset.isError {
+  border-bottom-color: #f44336;
+}
+.profile form fieldset:hover {
+  background-color: #00000017;
+}
+.profile.dark form fieldset:hover {
+  background-color: #ffffff21;
+}
+.profile form fieldset:nth-child(1) {
+  flex-basis: calc(50% - 2rem);
+}
+.profile form fieldset:nth-child(2) {
+  flex-basis: 50%;
+}
+.profile form fieldset input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+.profile.dark form fieldset input {
+  color: #fff;
+}
+.profile form fieldset input:focus {
+  outline: none;
+}
+.profile form fieldset input:focus + label,
+.profile form fieldset input:focus + label.filled {
+  font-size: 0.5rem;
+  color: #141b2d;
+  transform: translateY(-0.65rem);
+  -webkit-transform: translateY(-0.65rem);
+  -moz-transform: translateY(-0.65rem);
+  -ms-transform: translateY(-0.65rem);
+  -o-transform: translateY(-0.65rem);
+}
+.profile form fieldset.isError label,
+.profile form fieldset.isError input:focus + label {
+  color: #d32f2f;
+}
+.profile.dark form fieldset.isError label,
+.profile.dark form fieldset.isError input:focus + label {
+  color: #f44336;
+  font-weight: 600;
+}
+.profile form fieldset label {
+  color: #00000099;
+  font-size: 0.87rem;
+  cursor: text;
+  transition: 200ms transform, color;
+  -webkit-transition: 200ms transform, color;
+  -moz-transition: 200ms transform, color;
+  -ms-transition: 200ms transform, color;
+  -o-transition: 200ms transform, color;
+}
+.profile.dark form fieldset label {
+  color: #ffffffb3;
+}
+.profile form fieldset p {
+  position: absolute;
+  top: 110%;
+  color: #d32f2f;
+  font-size: 0.8rem;
+  left: 0;
+  font-weight: 600;
+}
+.profile.dark form fieldset p {
+  color: #f44336;
+}
+.profile form button {
+  font-size: 0.55rem;
+  padding: 0.7rem 1rem;
+  background-color: #4cceac;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5p;
+  -moz-border-radius: 5p;
+  -ms-border-radius: 5p;
+  -o-border-radius: 5p;
+  cursor: pointer;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+.profile form button:hover {
+  background-color: #359078;
+}
+.profile form fieldset label.filled {
+  font-size: 0.5rem;
+  color: #00000099;
+  transform: translateY(-0.65rem);
+  -webkit-transform: translateY(-0.65rem);
+  -moz-transform: translateY(-0.65rem);
+  -ms-transform: translateY(-0.65rem);
+  -o-transform: translateY(-0.65rem);
+}
+.profile.dark form fieldset label.filled {
+  color: #ffffffb3;
+}
+
+.error {
+  color: red;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

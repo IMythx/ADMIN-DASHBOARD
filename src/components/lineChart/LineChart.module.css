@@ -1,0 +1,51 @@
+.LineChart {
+  height: 75vh;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 1.6rem 0;
+}
+.head > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 0.2rem;
+}
+.head > div:first-child p:first-child {
+  font-weight: 600;
+  color: #141414;
+}
+.head.dark > div:first-child p:first-child {
+  color: #e0e0e0;
+}
+.head > div:first-child p:last-child {
+  color: #4cceac;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.head button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: transparent;
+}
+.head button:hover {
+  background-color: #ffffff14;
+}
+.head.dark button:hover {
+  background-color: #0000000a;
+}
+.head button svg {
+  color: #4cceac !important;
+  font-size: 1.5rem !important;
+}

@@ -1,0 +1,13 @@
+.event-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #4cceac;
+  padding: 1rem 1.5rem 1rem 1rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-size: 0.9rem;
+}

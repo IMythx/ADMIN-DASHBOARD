@@ -1,0 +1,40 @@
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+  background-color: #a4a9fc;
+  color: #141414;
+  cursor: pointer;
+  transition: 200ms background-color;
+  -webkit-transition: 200ms background-color;
+  -moz-transition: 200ms background-color;
+  -ms-transition: 200ms background-color;
+  -o-transition: 200ms background-color;
+  font-size: 0.75rem;
+  font-weight: bolder;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+}
+.download:hover {
+  background-color: #0405090a;
+}
+.download.dark {
+  background-color: #3e4396;
+  color: #e0e0e0;
+}
+.download.dark:hover {
+  background-color: #141b2d14;
+}
+
+.download svg {
+  color: #141414 !important;
+}
+.download.dark svg {
+  color: #e0e0e0 !important;
+}

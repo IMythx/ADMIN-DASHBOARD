@@ -1,0 +1,54 @@
+.trans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1.5px solid;
+  border-bottom: 4px solid #141b2d;
+  padding: 1rem;
+}
+.trans > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 0.1rem;
+}
+.trans > div:first-child p:first-child {
+  color: #4cceac;
+  font-weight: 600;
+}
+.trans > div:first-child p:last-child {
+  font-size: 0.9rem;
+  color: #141414;
+}
+.trans.dark > div:first-child p:last-child {
+  color: #e0e0e0;
+}
+.trans > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #141414;
+  font-size: 0.9rem;
+}
+.trans.dark > div:nth-child(2) {
+  color: #e0e0e0;
+}
+.trans > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4cceac;
+  color: #000000de;
+  padding: 0.45rem 0.55rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-size: 0.9rem;
+}
+.trans.dark > div:last-child {
+  color: #fff;
+}

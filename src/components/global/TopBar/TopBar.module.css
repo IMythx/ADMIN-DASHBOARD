@@ -1,0 +1,116 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.navbar > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar > div:nth-child(1) {
+  background-color: #f2f0f0;
+  padding-left: 0.6rem;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+.navbar.dark > div:nth-child(1) {
+  background-color: #1f2a40;
+}
+.navbar > div button {
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms background-color;
+  -webkit-transition: 300ms background-color;
+  -moz-transition: 300ms background-color;
+  -ms-transition: 300ms background-color;
+  -o-transition: 300ms background-color;
+  position: relative;
+}
+.navbar > div button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.navbar.dark > div button:hover {
+  background-color: rgba(255, 255, 255, 0.151);
+}
+.navbar > div svg {
+  color: #0000008a;
+  font-size: 1.2rem;
+}
+.navbar.dark > div svg {
+  color: #ffffff;
+}
+.navbar > div:nth-child(1) input {
+  border: none;
+  background-color: transparent;
+}
+.navbar.dark > div:nth-child(1) input {
+  color: #fff;
+}
+.navbar > div:nth-child(1) input:focus {
+  outline: none;
+}
+.navbar > div:nth-child(1) input::placeholder {
+  color: rgba(136, 136, 136, 0.596);
+  font-size: 0.72rem;
+}
+.navbar.dark > div:nth-child(1) input::placeholder {
+  color: #999;
+}
+.tooltip {
+  background-color: #1f2a40;
+  color: #fff;
+  position: absolute;
+  top: 100%;
+  left: -105%;
+  padding: 1.5rem 1rem 1rem;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  animation: animate 1.5s linear infinite;
+  -webkit-animation: animate 1.5s linear infinite;
+  -webkit-clip-path: polygon(
+    0 100%,
+    100% 100%,
+    100% 19%,
+    60% 18%,
+    54% 0,
+    44% 17%,
+    1% 19%
+  );
+  clip-path: polygon(
+    0 100%,
+    100% 100%,
+    100% 19%,
+    60% 18%,
+    54% 0,
+    44% 17%,
+    1% 19%
+  );
+  cursor: default;
+  pointer-events: none;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.6;
+  }
+}
